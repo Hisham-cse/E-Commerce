@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #logo{
+    width: 70px;
+    height: 120;
+    border:solid black;
+    margin:0;
+    display: flex;
+}
+#header{
+    display: flex; 
+    align-items: center;   
+    justify-content: space-between;
+    padding:20px 80px;
+    background: #e3e6f3;
+    border-bottom:5px solid ;
+    box-shadow: 0 5px 15px rgba(0, 0,0,0.06);
+}
+#navbar{
+    display: flex;
+    align-items:center;
+    justify-content:center ;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position:relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size:16px;
+    font-weight: 600;
+    color:#1a1a1a;
+    transition:0.3s ease;
+}
+#navbar li a:hover{
+    color:aqua;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:#088178;
+}
+#navbar li a.active::after{
+    content:"";
+    width: 30%;
+    height:2px;
+    background: #088178;
+    position: absolute;
+    bottom:-4px;
+    left:20px;
+}
+        
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the main content area */
+main {
+    padding: 20px;
+}
+
+/* Create a container for products and display them horizontally */
+.products-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+/* Style individual product listings */
+.product {
+    border: 1px solid #ddd;
+    margin-right: 20px; /* Add some space between products */
+    text-align: center;
+    max-width: 300px;
+    padding: 15px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.product .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff6600; /* Price color */
+}
+
+.product button {
+    background-color: #ff6600; /* Button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #ff3300; /* Hover color */
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+    </style>
+</head>
+<html>
+    <section id="header">
+        <table>
+        <a href="#"><img id="logo" src="SR logo.png" alt="logo"></a>
+        <h1 style="padding-left:95;font-size: 50px;font-family:Georgia, 'Times New Roman', Times, serif;"> S.R.COLLECTIONS</h1>
+        </table>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping fa-beat"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: muhammadhisham305@305.com</p>
+            <p>Phone: +91 9686869362,9980162163</p>
+            <p>Address: SR collections,Durgashree towers,Nellyady,Dakshina kannada,karnataka,India-574229</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My E-Commerce Store</p>
+    </footer>
+</body>
+</html>
+
